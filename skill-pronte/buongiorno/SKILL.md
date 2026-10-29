@@ -1,6 +1,6 @@
 ---
 name: buongiorno
-description: Apre la giornata. Legge lo Stato corrente del diario di ogni cliente attivo (e il calendario, se è collegato), monta il piano del giorno cliente per cliente, chiede su cosa concentrarsi e scrive il piano nella nota di oggi in Daily/. Usala a inizio giornata quando dici "buongiorno", "apro la giornata", "cosa faccio oggi" oppure /buongiorno.
+description: Apre la giornata. Legge lo Stato corrente del diario di ogni cliente attivo (e gli strumenti collegati a Claude, come il calendario), monta il piano del giorno cliente per cliente, chiede su cosa concentrarsi e scrive il piano nella nota di oggi in Daily/. Usala a inizio giornata quando dici "buongiorno", "apro la giornata", "cosa faccio oggi" oppure /buongiorno.
 ---
 
 # Buongiorno - apri la giornata
@@ -23,7 +23,7 @@ Se la persona ha scritto nel `CLAUDE.md` del vault o nel `PROFILO.md` regole div
 2. **Leggi le fonti del mattino.**
    - `Home.md`, per sapere quali clienti sono attivi. Quelli in pausa o chiusi li salti.
    - Per ogni cliente attivo, il diario più recente in `attivita/` (la settimana più alta nel nome, non il file modificato per ultimo): lo `Stato corrente` e i prossimi passi non spuntati.
-   - Il **calendario** di oggi, se è collegato a Claude. Se non lo è, salta questa parte senza fermarti e dillo in una riga.
+   - Gli **strumenti collegati** elencati più sotto, in «Strumenti collegati» (per esempio il calendario di oggi o la posta arrivata dall'ultima volta). Se uno non è collegato, salta quella parte senza fermarti e dillo in una riga.
    - Se esiste la nota di ieri (o dell'ultimo giorno lavorato) in `Daily/` con una «Chiusura della sera», leggi cosa la persona aveva deciso di spingere oggi.
 3. **Apri le settimane nuove**, se a qualche cliente attivo manca il file della settimana corrente (vedi «La settimana nuova» qui sotto). Altrimenti salta questo punto.
 4. **Monta il piano del giorno**, raggruppato per cliente: per ognuno, da una a tre cose concrete da fare oggi, prese dai prossimi passi, tenendo conto degli appuntamenti. Segnala in una riga i clienti fermi da due settimane o più (14 giorni dall'ultima voce del diario): sono quelli che rischiano di sfuggire.
@@ -50,6 +50,12 @@ aggiornato: AAAA-MM-GG
 
 Se la nota di oggi esiste già, non riscriverla: aggiungi o aggiorna solo il piano, dopo il sì.
 
+## Strumenti collegati
+
+Gli strumenti fuori dal vault che la persona vuole vedere la mattina. Leggi solo quelli davvero collegati a Claude; quelli segnati «da collegare» li salti finché la persona non li collega.
+
+- Calendario: gli appuntamenti di oggi, se è collegato.
+
 ## La settimana nuova
 
 Prima del piano, `/buongiorno` apre le settimane nuove dei clienti che non le hanno ancora (succede di solito il lunedì, o con un cliente che non tocchi da un po'):
@@ -64,7 +70,7 @@ Così lo Stato corrente salta da una settimana all'altra restando in cima al fil
 ## Regole
 
 - **Una domanda alla volta.** La domanda chiave è il focus.
-- **Non inventare.** Nel piano metti solo ciò che trovi nei diari, nella nota di ieri e nel calendario. Se un cliente non ha prossimi passi, scrivilo.
+- **Non inventare.** Nel piano metti solo ciò che trovi nei diari, nella nota di ieri e negli strumenti collegati. Se un cliente non ha prossimi passi, scrivilo.
 - **Mostra il piano prima di scriverlo**, così la persona lo corregge.
 - Linguaggio semplice, niente gergo.
 - Nei diari dei clienti scrive solo per aprire la settimana nuova; il lavoro di una sessione lo salva `/log`, la giornata la chiude `/shutdown`.

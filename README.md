@@ -32,7 +32,7 @@ Fai la lista degli strumenti che usi ogni giorno (calendario, email, documenti, 
 
 ## Il compito per casa
 
-Usa i rituali per una settimana vera, sui tuoi clienti: `/buongiorno` ogni mattina, `/log` a fine di ogni sessione. Venerdì, se l'hai installata, prova `/chiusura-settimana` e guarda se il recap ti racconta la settimana com'è andata davvero.
+Usa i rituali per una settimana vera, sui tuoi clienti: `/buongiorno` ogni mattina, `/log` a fine di ogni sessione. Venerdì, se l'hai installata, prova `/chiusura-settimana` e guarda se il recap ti racconta la settimana com'è andata davvero. Poi raccontala con un'email a Mihai entro **giovedì 5 novembre alle 13:00**: quale rituale hai usato di più, cosa ti ha fatto risparmiare, cosa correggeresti.
 
 ## Se qualcosa non torna
 

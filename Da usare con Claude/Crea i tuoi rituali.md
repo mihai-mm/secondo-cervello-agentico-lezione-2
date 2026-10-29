@@ -97,7 +97,7 @@ Dopo ogni passo: spunta le caselle del passo con la data (`✅ AAAA-MM-GG`; un p
 ### Passo 3 - Il mattino: `/buongiorno`
 
 - [ ] Claude legge `skill-pronte/buongiorno/SKILL.md` e te lo spiega in cinque righe: cosa legge, cosa ti chiede, cosa scrive e dove.
-- [ ] Ti fa due domande, una alla volta: **«Oltre ai clienti, cosa vuoi vedere la mattina?»** (per esempio gli appuntamenti, una cosa personale, le scadenze della settimana) e **«Hai un calendario collegato a Claude?»**. Se non lo sai, va bene «no»: si può aggiungere dopo.
+- [ ] Ti fa due domande, una alla volta: **«Oltre ai clienti, cosa vuoi vedere la mattina?»** (per esempio gli appuntamenti, una cosa personale, le scadenze della settimana) e **«Oltre al calendario, c'è qualcos'altro che vorresti collegare a Claude?»** (la posta, i documenti in Drive, il foglio dei contatti, un gestionale). Claude controlla quali sono già collegati e li fa leggere a `/buongiorno`; quelli che non lo sono li annota nella skill come «da collegare», così li ritrovi quando li colleghi. Se non lo sai, va bene «no».
 - [ ] Adatta la skill alle risposte e ti mostra cosa ha cambiato. Poi ti spiega che scriverà in `.claude/skills/buongiorno/` e che **l'app ti chiederà il permesso**, perché `.claude/` è una cartella speciale: va consentito. Con il tuo sì la installa e aggiunge la sua riga nella tabella delle procedure del `CLAUDE.md`.
 - [ ] Apri una **conversazione nuova** nel vault e scrivi `/buongiorno`. Rispondi alla domanda sul focus e dai il sì alla nota di oggi. Poi torna qui e scrivi «provata».
 
@@ -108,7 +108,7 @@ Dopo ogni passo: spunta le caselle del passo con la data (`✅ AAAA-MM-GG`; un p
 ### Passo 4 - Riprendere un cliente: `/riprendi-progetto`
 
 - [ ] Claude legge `skill-pronte/riprendi-progetto/SKILL.md` e te lo spiega in cinque righe.
-- [ ] Ti chiede: **«Quando riprendi un cliente, cosa ti serve sapere per primo?»** (la scadenza più vicina, cosa ha chiesto l'ultima volta, i soldi). Adatta l'ordine del quadro alla risposta, ti mostra la modifica e, con il tuo sì, installa la skill (stesso permesso del Passo 3) e aggiunge la sua riga nella tabella delle procedure.
+- [ ] Ti fa due domande, una alla volta: **«Quando riprendi un cliente, cosa ti serve sapere per primo?»** (la scadenza più vicina, cosa ha chiesto l'ultima volta, i soldi) e **«Vuoi che Claude guardi anche le ultime email con il cliente o i suoi documenti?»**. Come al Passo 3: quello che è già collegato lo aggiunge alle cose da rileggere, il resto lo annota come «da collegare». Adatta il quadro alle risposte, ti mostra la modifica e, con il tuo sì, installa la skill (stesso permesso del Passo 3) e aggiunge la sua riga nella tabella delle procedure.
 - [ ] In una conversazione nuova scrivi `/riprendi-progetto` e il nome di un cliente. Con Crescenda Academy di esempio, guarda se Claude trova la cosa che non torna fra lo Stato corrente e una decisione più recente. Poi torna qui e scrivi «provata».
 
 **Output atteso**: la skill installata e, in chat, il quadro del cliente con le fonti, le cose che non tornano e due o tre mosse possibili. Nessun file scritto senza il tuo sì.
@@ -151,7 +151,7 @@ Fai la lista degli strumenti che usi ogni giorno (calendario, email, documenti, 
 
 ### Compito per casa
 
-Usa i rituali per una settimana vera, sui tuoi clienti: `/buongiorno` ogni mattina, `/log` a fine di ogni sessione. Venerdì, se l'hai installata, prova `/chiusura-settimana` e guarda se il recap ti racconta la settimana com'è andata davvero.
+Usa i rituali per una settimana vera, sui tuoi clienti: `/buongiorno` ogni mattina, `/log` a fine di ogni sessione. Venerdì, se l'hai installata, prova `/chiusura-settimana` e guarda se il recap ti racconta la settimana com'è andata davvero. Poi raccontala con un'email a Mihai entro **giovedì 5 novembre alle 13:00**: quale rituale hai usato di più, cosa ti ha fatto risparmiare, cosa correggeresti.
 
 ---
 
