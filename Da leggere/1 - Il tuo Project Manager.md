@@ -31,9 +31,10 @@ Il primo rituale. Quello che trasforma il lunedì caotico in una lista chiara.
 
 1. i **prossimi passi** di ogni cliente, scritti nel suo diario;
 2. il tuo **calendario** della giornata, se l'hai collegato;
-3. la **chiusura di ieri sera**, se l'hai fatta.
+3. la **chiusura di ieri sera**, se l'hai fatta;
+4. le **priorità della settimana**, le due o tre cose che contano di più.
 
-Li mette insieme e ti restituisce il piano: ecco le cose di oggi, in ordine, cliente per cliente. Poi ti fa una domanda che cambia tutto: **«Su cosa ti vuoi concentrare oggi?»** Non ti scarica solo una lista: ti aiuta a scegliere la priorità, così la giornata ha un fuoco.
+Li mette insieme e ti restituisce il piano: ecco le cose di oggi, in ordine, cliente per cliente. Poi fa la cosa che cambia tutto: **ti propone su cosa concentrarti**, con il motivo («la scheda del Modulo 3: Crescenda è ferma da due settimane»), e tu confermi o cambi. Non ti scarica solo una lista e non ti chiede di scegliere da zero: ti porta una proposta, così la giornata ha un fuoco.
 
 Quel piano non resta un pensiero che svanisce: viene **scritto** nella nota di oggi, in `Daily/`.
 
@@ -48,7 +49,7 @@ Qui incontri i due modi in cui il tuo secondo cervello è organizzato:
 
 > **La skill `/buongiorno`**
 > - **Cosa le dai**: niente, è lei che va a leggere: i prossimi passi di ogni cliente e il calendario, se collegato.
-> - **Cosa fa**: monta il piano del giorno (cosa fare, per quale cliente, in che ordine) e ti chiede su cosa concentrarti. Il lunedì apre anche le settimane nuove dei clienti.
+> - **Cosa fa**: monta il piano del giorno (cosa fare, per quale cliente, in che ordine) e ti propone su cosa concentrarti. Il lunedì apre anche le settimane nuove dei clienti.
 > - **Dove finisce**: nella nota di oggi, `Daily/AAAA-MM-GG.md`, che resta scritta.
 
 ## Recuperare un cliente: `/riprendi-progetto`
@@ -133,7 +134,8 @@ Hai lavorato un'ora su un cliente. Prima di passare al successivo, un comando: *
 
 - scrive nel **diario della settimana** cosa hai fatto oggi;
 - aggiorna lo **`Stato corrente`**: la fase, dove siamo, e spunta i **prossimi passi** fatti;
-- tiene allineato il resto: aggiunge il link al documento nuovo nella **mappa** e, se hai preso una decisione, la segna in `MEMORY.md` con la data e il motivo.
+- tiene allineato il resto: aggiunge il link al documento nuovo nella **mappa** e, se hai preso una decisione, la segna in `MEMORY.md` con la data e il motivo;
+- e impara: se durante il lavoro hai corretto Claude sul tuo modo di lavorare («scrivilo più corto»), ti propone di segnarlo nel tuo **`PROFILO.md`**. La correzione di oggi non la ripeti la settimana prossima.
 
 Perché tutto questo? Per un motivo solo: **niente pezzi scollegati.** Se salvassi il lavoro ma non aggiornassi lo Stato corrente, la prossima volta riapriresti il cliente e troveresti una fotografia vecchia. Salvare *e* allineare, sempre.
 
@@ -162,17 +164,19 @@ Venerdì pomeriggio, l'ultimo rituale. Un comando, e Claude ti prepara il recap 
 
 Non è un appunto privato: è un punto della situazione che puoi **girare ai collaboratori** o tenere come storia.
 
+Poi guarda avanti: ti propone **le due o tre priorità della settimana dopo**, tu le confermi o le cambi. Da lunedì `/buongiorno` te le ricorda ogni mattina e ti dice quale lavoro le spinge. Si decide il venerdì, si esegue nei giorni dopo.
+
 E intanto la ruota gira: la settimana che finisce resta com'è, e lunedì `/buongiorno` apre quella nuova con lo Stato corrente già ricopiato in cima. Apri lunedì, chiudi venerdì. Se ti dimentichi, funziona lo stesso.
 
 > **La skill `/chiusura-settimana`**
-> - **Cosa fa**: prepara il recap della settimana per ogni cliente (fatto, avanzato, resta).
+> - **Cosa fa**: prepara il recap della settimana per ogni cliente (fatto, avanzato, resta) e fissa con te le priorità della settimana dopo.
 > - **Dove finisce**: in `Daily/`, pronto da condividere o da archiviare.
 
 ## Il tuo Project Manager è al lavoro
 
 Fai un passo indietro e guarda cosa hai messo in piedi. Una giornata intera, tenuta insieme da pochi comandi:
 
-- la mattina **apri** con `/buongiorno` e scegli il fuoco del giorno;
+- la mattina **apri** con `/buongiorno` e confermi il fuoco del giorno;
 - **recuperi** un cliente in trenta secondi con `/riprendi-progetto`;
 - **lavori** con gli strumenti collegati;
 - **salvi** con `/log`, tutto allineato;
@@ -185,7 +189,7 @@ Il filo non lo tieni più tu a memoria: lo tiene il **sistema**. Tu fai la parte
 ## Cosa ti porti a casa oggi
 
 - **Il problema del Project Manager**: tanti clienti in parallelo, il contesto che si disperde, mezz'ora ogni mattina a «ripartire da capo». La cura: rituali e un secondo cervello che ricorda al posto tuo.
-- **`/buongiorno`** apre la giornata: legge i prossimi passi di ogni cliente e il calendario, monta il piano e ti chiede su cosa concentrarti. Il piano va nella nota di oggi, in `Daily/`.
+- **`/buongiorno`** apre la giornata: legge i prossimi passi di ogni cliente e il calendario, monta il piano e ti propone su cosa concentrarti. Il piano va nella nota di oggi, in `Daily/`.
 - **Due assi**: il cliente (la sua cartella) e la giornata (la nota di oggi).
 - **`/riprendi-progetto`** ricostruisce un cliente in trenta secondi: ti mostra lo stato con le fonti, segnala le cose da chiarire, propone la mossa solo dopo la tua conferma.
 - **La memoria di progetto** è la cartella del cliente: `CLAUDE.md` (chi è e le regole), `MEMORY.md` (decisioni e numeri), la mappa, e il diario in `attivita/` con lo Stato corrente in cima. Sopra, le regole del vault.

@@ -53,13 +53,14 @@ Queste sono le regole che il tuo Claude deve seguire mentre ti guida. Si aggiung
 
 1. **Sei la guida, un passo alla volta.** Mai fare due passi senza la conferma della persona. Una domanda alla volta.
 2. **Annuncia prima di scrivere.** Prima di creare, modificare o copiare un file dici quale, dove e con cosa, e aspetti il sì. Dopo lo rileggi e dici come verificarlo. Il registro di questa guida lo aggiorni senza chiedere.
-3. **Le skill pronte sono la base, non il risultato.** Prima di installare un rituale lo spieghi in parole semplici (cosa legge, cosa scrive, quando si usa), fai le domande del passo e adatti il testo della skill alle risposte. Non installare mai una skill senza averla mostrata in breve.
-4. **Niente letture fuori dal vault.** Le skill pronte e i clienti di esempio stanno nella cartella della lezione in `0-Inbox/`. Se la persona ha file altrove, chiedile di copiarli in `0-Inbox/`.
-5. **Non toccare i file della persona senza un sì**, e non riscrivere i giorni passati dei diari: si aggiunge, e lo Stato corrente si aggiorna.
-6. **Spiega ogni termine nuovo** la prima volta: rituale, skill (nel pacchetto: procedura), Stato corrente, prossimi passi, settimana (`2026-W44` = la 44ª settimana dell'anno).
-7. **Non inventare**: clienti, prossimi passi e fatti vengono dai file. Se mancano, chiedili.
-8. **Intoppi.** Se qualcosa non torna, chiedi cosa vede sullo schermo o uno screenshot, poi spiega: cosa è successo, perché, l'unica cosa da fare adesso e la strada alternativa. Se un'azione viene bloccata, non insistere con lo stesso comando.
-9. **Lascia questo file al suo posto.** Non spostarlo né eliminarlo senza un sì esplicito.
+3. **Le skill pronte sono la base, non il risultato.** Prima di installare un rituale lo spieghi in parole semplici (cosa legge, cosa scrive, quando si usa), mostri il menu del passo e adatti la skill alle scelte. Non installare mai una skill senza averla mostrata in breve.
+4. **Le scelte si fanno dal menu.** Mostra il menu del passo così com'è, con gli esempi: la persona risponde con i numeri. Non sostituirlo con una domanda aperta («cosa vuoi vedere?»): chi non sa cosa è possibile risponde «va bene così». Scrivi le scelte nella sezione «Le tue scelte» in fondo alla skill, che è dove la skill le legge; se una scelta chiede altro (quale domanda personale, a chi girare il recap), chiedilo con una domanda sola.
+5. **Niente letture fuori dal vault.** Le skill pronte e i clienti di esempio stanno nella cartella della lezione in `0-Inbox/`. Se la persona ha file altrove, chiedile di copiarli in `0-Inbox/`.
+6. **Non toccare i file della persona senza un sì**, e non riscrivere i giorni passati dei diari: si aggiunge, e lo Stato corrente si aggiorna.
+7. **Spiega ogni termine nuovo** la prima volta: rituale, skill (nel pacchetto: procedura), Stato corrente, prossimi passi, settimana (`2026-W44` = la 44ª settimana dell'anno).
+8. **Non inventare**: clienti, prossimi passi e fatti vengono dai file. Se mancano, chiedili.
+9. **Intoppi.** Se qualcosa non torna, chiedi cosa vede sullo schermo o uno screenshot, poi spiega: cosa è successo, perché, l'unica cosa da fare adesso e la strada alternativa. Se un'azione viene bloccata, non insistere con lo stesso comando.
+10. **Lascia questo file al suo posto.** Non spostarlo né eliminarlo senza un sì esplicito.
 
 ## Come condurre
 
@@ -97,18 +98,50 @@ Dopo ogni passo: spunta le caselle del passo con la data (`✅ AAAA-MM-GG`; un p
 ### Passo 3 - Il mattino: `/buongiorno`
 
 - [ ] Claude legge `skill-pronte/buongiorno/SKILL.md` e te lo spiega in cinque righe: cosa legge, cosa ti chiede, cosa scrive e dove.
-- [ ] Ti fa due domande, una alla volta: **«Oltre ai clienti, cosa vuoi vedere la mattina?»** (per esempio gli appuntamenti, una cosa personale, le scadenze della settimana) e **«Oltre al calendario, c'è qualcos'altro che vorresti collegare a Claude?»** (la posta, i documenti in Drive, il foglio dei contatti, un gestionale). Claude controlla quali sono già collegati e li fa leggere a `/buongiorno`; quelli che non lo sono li annota nella skill come «da collegare», così li ritrovi quando li colleghi. Se non lo sai, va bene «no».
-- [ ] Adatta la skill alle risposte e ti mostra cosa ha cambiato. Poi ti spiega che scriverà in `.claude/skills/buongiorno/` e che **l'app ti chiederà il permesso**, perché `.claude/` è una cartella speciale: va consentito. Con il tuo sì la installa e aggiunge la sua riga nella tabella delle procedure del `CLAUDE.md`.
-- [ ] Apri una **conversazione nuova** nel vault e scrivi `/buongiorno`. Rispondi alla domanda sul focus e dai il sì alla nota di oggi. Poi torna qui e scrivi «provata».
+- [ ] Ti mostra il **menu del buongiorno**, qui sotto, e tu rispondi con i numeri. Per gli strumenti, Claude controlla quali sono già collegati a Claude: quelli che non lo sono li annota come «da collegare», così li ritrovi quando li colleghi.
+
+```
+Il tuo buongiorno fa già: il piano cliente per cliente, i clienti fermi da due settimane,
+la nota di oggi in Daily/ e, se il calendario è collegato a Claude, gli appuntamenti di oggi.
+Puoi scegliere:
+
+1. Altri strumenti collegati, oltre al calendario: la posta, Drive, il foglio dei contatti,
+   un gestionale («2 email nuove da Giulia di Crescenda»)
+2. Le priorità della settimana, già attive: se mancano te le chiede, e ti dice cosa le spinge
+   («la scheda del Modulo 3 spinge la priorità "Crescenda riparte"»)
+3. Una domanda personale per iniziare, una fra: per cosa sei grato; qual è la cosa che,
+   se la chiudi, rende la giornata un successo; cosa fai oggi che ti avvicina a chi vuoi
+   diventare; come ti senti
+
+Quali vuoi? Rispondi con i numeri, oppure «nessuna»: si aggiungono dopo.
+La 2 è già attiva: se non la vuoi, dillo.
+```
+
+- [ ] Scrive le tue scelte nella sezione «Le tue scelte», in fondo alla skill, e ti mostra cosa ha cambiato. Poi ti spiega che scriverà in `.claude/skills/buongiorno/` e che **l'app ti chiederà il permesso**, perché `.claude/` è una cartella speciale: va consentito. Con il tuo sì la installa e aggiunge la sua riga nella tabella delle procedure del `CLAUDE.md`.
+- [ ] Apri una **conversazione nuova** nel vault e scrivi `/buongiorno`. Rispondi alle domande (le priorità della settimana, se mancano; il focus che ti propone) e dai il sì alla nota di oggi. Poi torna qui e scrivi «provata».
 
 **Output atteso**: la skill in `.claude/skills/buongiorno/SKILL.md` e la nota `Daily/AAAA-MM-GG.md` con il focus e il piano per cliente.
-**Verifica**: scrivi `/` nella chat: nel menu c'è `/buongiorno` (se non c'è, scrivi `/reload-skills`). Apri la cartella `Daily/` in Obsidian: c'è la nota di oggi.
+**Verifica**: in fondo alla skill, «Le tue scelte» riporta quello che hai scelto. Scrivi `/` nella chat: nel menu c'è `/buongiorno` (se non c'è, scrivi `/reload-skills`). Apri la cartella `Daily/` in Obsidian: c'è la nota di oggi.
 **Se non funziona**: se il permesso viene rifiutato, la skill non c'è: riprova consentendolo. Se il piano è vuoto, i diari non hanno prossimi passi: torna al Passo 2.
 
 ### Passo 4 - Riprendere un cliente: `/riprendi-progetto`
 
 - [ ] Claude legge `skill-pronte/riprendi-progetto/SKILL.md` e te lo spiega in cinque righe.
-- [ ] Ti fa due domande, una alla volta: **«Quando riprendi un cliente, cosa ti serve sapere per primo?»** (la scadenza più vicina, cosa ha chiesto l'ultima volta, i soldi) e **«Vuoi che Claude guardi anche le ultime email con il cliente o i suoi documenti?»**. Come al Passo 3: quello che è già collegato lo aggiunge alle cose da rileggere, il resto lo annota come «da collegare». Adatta il quadro alle risposte, ti mostra la modifica e, con il tuo sì, installa la skill (stesso permesso del Passo 3) e aggiunge la sua riga nella tabella delle procedure.
+- [ ] Ti mostra il **menu di riprendi-progetto**, qui sotto, e tu rispondi con i numeri. Per posta e documenti vale come al Passo 3: quello che non è collegato resta «da collegare». Claude scrive le tue scelte nella skill, ti mostra la modifica e, con il tuo sì, la installa (stesso permesso del Passo 3) e aggiunge la sua riga nella tabella delle procedure.
+
+```
+Quando riprendi un cliente, Claude ti mostra la fase, cosa è stato deciso, cosa è in sospeso
+e cosa non torna. Scegli cosa mettere per primo:
+
+1. La scadenza più vicina («la scheda del Modulo 3 va a Giulia entro venerdì»)
+2. Cosa ha chiesto il cliente l'ultima volta («Giulia vuole esempi di calendario editoriale»)
+3. I soldi: preventivo, budget, fatture («lo spostamento del budget aspetta il sì del cliente»)
+4. In più, le ultime email con il cliente e i suoi documenti, se la posta o Drive
+   sono collegati a Claude
+
+Scegli uno fra 1, 2 e 3 (oppure «va bene così») e aggiungi il 4 se lo vuoi.
+```
+
 - [ ] In una conversazione nuova scrivi `/riprendi-progetto` e il nome di un cliente. Con Crescenda Academy di esempio, guarda se Claude trova la cosa che non torna fra lo Stato corrente e una decisione più recente. Poi torna qui e scrivi «provata».
 
 **Output atteso**: la skill installata e, in chat, il quadro del cliente con le fonti, le cose che non tornano e due o tre mosse possibili. Nessun file scritto senza il tuo sì.
@@ -118,17 +151,51 @@ Dopo ogni passo: spunta le caselle del passo con la data (`✅ AAAA-MM-GG`; un p
 ### Passo 5 - Fine sessione: `/log`
 
 - [ ] Claude legge `skill-pronte/log/SKILL.md` e te lo spiega: con un comando salva in più posti, tutti allineati.
-- [ ] Ti chiede: **«A fine sessione, cosa vuoi ritrovare scritto la prossima volta?»** e adatta la skill alla risposta. Con il tuo sì la installa e aggiunge la sua riga nella tabella delle procedure.
-- [ ] In una conversazione nuova fai un piccolo lavoro su un cliente (per esempio «segna che ho mandato la scheda del Modulo 3 a Giulia»: il file della scheda non serve, Claude annota la voce e spunta il passo), poi scrivi `/log`. Guarda cosa propone di scrivere e dove, dai il sì. Poi torna qui e scrivi «provata».
+- [ ] Ti mostra il **menu del log**, qui sotto, e tu rispondi con i numeri. Claude scrive le tue scelte nella skill e, con il tuo sì, la installa e aggiunge la sua riga nella tabella delle procedure.
 
-**Output atteso**: nel diario della settimana del cliente la voce di oggi, lo Stato corrente aggiornato con il passo spuntato, e un riepilogo in tre righe in chat.
+```
+Il tuo /log salva già il lavoro nel diario del cliente, aggiorna lo Stato corrente,
+segna le decisioni e collega i file nuovi. Puoi scegliere:
+
+1. Le correzioni che dai a Claude finiscono nel tuo profilo, già attiva e consigliata:
+   è così che Claude impara come lavori
+   («Oggi mi hai chiesto due volte testi più corti: lo segno nel tuo profilo?»)
+2. Il tempo della sessione nel diario, utile se lavori a ore («Studio Sorriso, 45 minuti»)
+3. Una bozza di aggiornamento per il cliente, che poi mandi tu
+   («Ciao Paolo, oggi abbiamo aggiunto i due contatti nuovi...»)
+
+Quali vuoi? La 1 è già attiva: se non la vuoi, dillo.
+```
+
+- [ ] In una conversazione nuova fai un piccolo lavoro su un cliente (per esempio «segna che ho mandato la scheda del Modulo 3 a Giulia»: il file della scheda non serve, Claude annota la voce e spunta il passo). Mentre lavorate, correggi Claude su una cosa del suo modo di lavorare (per esempio «d'ora in poi, quando mi proponi cosa scrivere, una riga per file»). Poi scrivi `/log`. Guarda cosa propone di scrivere e dove, dai il sì. Poi torna qui e scrivi «provata».
+
+**Output atteso**: nel diario della settimana del cliente la voce di oggi, lo Stato corrente aggiornato con il passo spuntato, la tua correzione proposta per il `PROFILO.md` (scritta dopo il tuo sì) e un riepilogo in tre righe in chat.
 **Verifica**: apri il diario del cliente: la casella del passo fatto è `- [x]`. Se era una settimana nuova, c'è il file nuovo con lo Stato corrente ricopiato in cima.
 **Se non funziona**: se `/log` dice che non c'è niente da salvare, nella conversazione non è successo niente di concreto: fai prima un piccolo lavoro, poi riprova.
 
 ### Passo 6 - Facoltativo: la sera e il venerdì
 
 - [ ] Claude ti chiede se vuoi anche `/shutdown` (la chiusura della giornata) e `/chiusura-settimana` (il recap del venerdì). Sono facoltativi: se ti dimentichi di usarli, il sistema funziona lo stesso.
-- [ ] Se sì, per ognuno: te lo spiega, ti fa una domanda (per `/shutdown`: «a che ora chiudi di solito e cosa vuoi chiederti prima di staccare?»; per `/chiusura-settimana`: «il recap lo tieni per te o lo giri a qualcuno?»), lo adatta e lo installa con il tuo sì.
+- [ ] Se sì, per ognuno: te lo spiega, ti mostra il suo menu, qui sotto, lo adatta alle tue scelte e lo installa con il tuo sì.
+
+```
+/shutdown fa già: il recap della giornata e due domande per domani. Puoi scegliere:
+
+1. Una domanda di bilancio prima delle domande per domani («Cosa è andato bene oggi?»)
+```
+
+```
+/chiusura-settimana fa già: fatto, avanzato e resta per ogni cliente. Puoi scegliere:
+
+1. Le priorità della settimana dopo, già attive: Claude ne propone due o tre
+   e /buongiorno te le ricorda ogni mattina
+2. Prima scrivi tu: tre righe su com'è andata, prima che Claude ti mostri il recap
+   (così ricordi con la tua testa, invece di confermare il riassunto di Claude)
+3. Lo giri a qualcuno: Claude prepara la bozza del messaggio, la mandi tu (dimmi a chi)
+
+Quali vuoi? La 1 è già attiva: se non la vuoi, dillo.
+```
+
 
 **Output atteso**: le skill scelte installate, oppure il passo spuntato con «saltato: non mi servono ora».
 **Verifica**: nel menu `/` compaiono le skill installate.

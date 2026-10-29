@@ -49,17 +49,17 @@ Dalla Lezione 2 del corso: il modo di tenere insieme più clienti senza ripartir
 
 **La settimana nuova.** Il diario ha un file per settimana. Alla prima apertura di una settimana nuova (di solito con `/buongiorno` del lunedì, altrimenti con il primo salvataggio) nasce il file nuovo e ci si ricopia in cima lo `## Stato corrente` dell'ultimo file, prossimi passi aperti compresi, dopo aver controllato che non contraddica `MEMORY.md` (se lo contraddice, si chiede alla persona come scriverlo). Il file vecchio resta com'è: è la storia del progetto.
 
-**La giornata.** In `Daily/AAAA-MM-GG.md` c'è la nota del giorno: il focus scelto la mattina, il piano cliente per cliente e, se la persona chiude la giornata, la chiusura della sera. I recap della settimana stanno in `Daily/AAAA-Www - recap della settimana.md`.
+**La giornata.** In `Daily/AAAA-MM-GG.md` c'è la nota del giorno: il focus della mattina, il piano cliente per cliente e, se la persona chiude la giornata, la chiusura della sera. I recap della settimana stanno in `Daily/AAAA-Www - recap della settimana.md`, con le priorità della settimana dopo.
 
 **I rituali**, ognuno con la sua procedura in `.claude/skills/` (si installano con la guida della Lezione 2):
 
 | Quando | Rituale | Cosa fa |
 |---|---|---|
-| La mattina | `/buongiorno` | apre la settimana nuova se serve, legge gli Stati correnti, monta il piano del giorno, chiede il focus, scrive la nota di oggi |
+| La mattina | `/buongiorno` | apre la settimana nuova se serve, legge gli Stati correnti, monta il piano del giorno, propone il focus, scrive la nota di oggi |
 | Quando riprendi un cliente | `/riprendi-progetto` | rilegge la cartella del cliente, ricostruisce dove siete, segnala cosa non torna, propone 2-3 mosse. Scrive solo la settimana nuova o la correzione dello Stato corrente, con il tuo sì |
-| A fine sessione | `/log` | fa per esteso «Salvare il lavoro»: diario, Stato corrente con i prossimi passi spuntati, MEMORY, mappa |
+| A fine sessione | `/log` | fa per esteso «Salvare il lavoro»: diario, Stato corrente con i prossimi passi spuntati, MEMORY, mappa, e le correzioni sul modo di lavorare nel `PROFILO.md` con il tuo sì |
 | La sera (facoltativo) | `/shutdown` | recap della giornata e due domande per domani, nella nota di oggi |
-| Il venerdì (facoltativo) | `/chiusura-settimana` | recap fatto, avanzato, resta per ogni cliente, da condividere |
+| Il venerdì (facoltativo) | `/chiusura-settimana` | recap fatto, avanzato, resta per ogni cliente, da condividere, e le priorità della settimana dopo |
 
 Se un rituale non c'è ancora in `.claude/skills/`, segui comunque queste regole quando la persona chiede le stesse cose a parole.
 ```
@@ -69,7 +69,7 @@ Se un rituale non c'è ancora in `.claude/skills/`, segui comunque queste regole
 Nella tabella di «LE PROCEDURE» aggiungi queste righe sotto quella di `porta-i-tuoi-file` (se la tabella non c'è, mostra alla persona dove la metteresti e chiedi), **solo per i rituali già installati** in `.claude/skills/` (la guida le aggiunge una alla volta mentre li installa):
 
 ```
-| «Buongiorno», «apro la giornata», «cosa faccio oggi» | `buongiorno` | piano in chat e domanda sul focus; scrive la nota di oggi dopo il tuo sì |
+| «Buongiorno», «apro la giornata», «cosa faccio oggi» | `buongiorno` | piano in chat e focus proposto; scrive la nota di oggi dopo il tuo sì |
 | «Riprendiamo [cliente]», «dove eravamo con…» | `riprendi-progetto` | quadro e discrepanze in chat; scrive solo con il tuo sì |
 | «Salva», «registra», «chiudiamo qui» | `log` | ti mostra cosa scrive e dove; scrive dopo il tuo sì |
 | «Chiudo la giornata», «tiriamo le somme» | `shutdown` | due domande, poi la chiusura nella nota di oggi dopo il tuo sì |

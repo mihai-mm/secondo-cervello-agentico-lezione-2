@@ -6,11 +6,13 @@ Prima di installarli, il vault va aggiornato alla Lezione 2 (`Da usare con Claud
 
 ## Cosa c'è
 
-- **`buongiorno/`**: la mattina. Legge lo Stato corrente di ogni cliente, monta il piano del giorno, ti chiede su cosa concentrarti e scrive la nota di oggi in `Daily/`. Il primo buongiorno della settimana apre anche le settimane nuove dei clienti.
+- **`buongiorno/`**: la mattina. Legge lo Stato corrente di ogni cliente, monta il piano del giorno, ti propone su cosa concentrarti e scrive la nota di oggi in `Daily/`. Ti ricorda le priorità della settimana. Il primo buongiorno della settimana apre anche le settimane nuove dei clienti.
 - **`riprendi-progetto/`**: quando riprendi un cliente. Rilegge la sua cartella, ti dice dove eravate e cosa non torna, e ti propone due o tre mosse. Non scrive niente senza il tuo sì.
-- **`log/`**: a fine sessione. Salva il lavoro nel diario del cliente, aggiorna lo Stato corrente e spunta i prossimi passi, segna le decisioni in `MEMORY.md` e collega i file nuovi.
+- **`log/`**: a fine sessione. Salva il lavoro nel diario del cliente, aggiorna lo Stato corrente e spunta i prossimi passi, segna le decisioni in `MEMORY.md` e collega i file nuovi. Le correzioni che dai a Claude sul tuo modo di lavorare le propone per il tuo profilo: così non le ripeti.
 - **`shutdown/`** (facoltativo): la sera. Recap della giornata e due domande per domani, nella nota di oggi.
-- **`chiusura-settimana/`** (facoltativo): il venerdì. Fatto, avanzato, resta per ogni cliente, da condividere con il team.
+- **`chiusura-settimana/`** (facoltativo): il venerdì. Fatto, avanzato, resta per ogni cliente, da condividere con il team, e le priorità della settimana dopo, che `/buongiorno` ti ricorda ogni mattina.
+
+In fondo a ogni skill c'è la sezione **«Le tue scelte»**: cosa leggere oltre ai diari (il calendario, la posta), le priorità, la domanda personale e così via. Le skill pronte hanno le scelte di partenza; la guida le cambia con te, e puoi cambiarle quando vuoi chiedendolo a Claude («nel buongiorno togli la domanda personale»).
 
 ## Come si installa
 
