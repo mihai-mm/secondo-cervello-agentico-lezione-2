@@ -159,8 +159,9 @@ Il tuo /log salva già il lavoro nel diario del cliente, aggiorna lo Stato corre
 segna le decisioni e collega i file nuovi. Puoi scegliere:
 
 1. Le correzioni che dai a Claude finiscono nel tuo profilo, già attiva e consigliata:
-   è così che Claude impara come lavori
-   («Oggi mi hai chiesto due volte testi più corti: lo segno nel tuo profilo?»)
+   è così che Claude impara come lavori. Solo un esempio, non riguarda te:
+   a fine sessione, se l'hai corretto davvero, ti chiederà qualcosa come
+   «Oggi mi hai chiesto due volte testi più corti: lo segno nel tuo profilo?»
 2. Il tempo della sessione nel diario, utile se lavori a ore («Studio Sorriso, 45 minuti»)
 3. Una bozza di aggiornamento per il cliente, che poi mandi tu
    («Ciao Paolo, oggi abbiamo aggiunto i due contatti nuovi...»)
