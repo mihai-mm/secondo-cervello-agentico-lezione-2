@@ -12,7 +12,7 @@ Fa per esteso quello che il `CLAUDE.md` del vault chiama «Salvare il lavoro».
 ## Cosa fai
 
 1. **Capisci cosa salvare.** Ripercorri la conversazione: file prodotti, decisioni prese dalla persona, fatti nuovi, prossimi passi fatti o nati. Se ha lavorato su più clienti, salvi ognuno nella sua cartella. Se non c'è niente di concreto, dillo in una riga e fermati.
-2. **Mostra cosa scriverai, poi aspetta il sì.** Un elenco breve, file per file: cosa aggiungi e dove, comprese le cose imparate sulla persona (punto 5). Se in «Le tue scelte» è attivo il tempo della sessione, chiedi nella stessa domanda quanto ci ha lavorato.
+2. **Mostra cosa scriverai, poi aspetta il sì**, con la forma di «La risposta in chat» qui sotto: cosa salvi, le cose imparate sulla persona (punto 5) e una domanda sola. Se in «Le tue scelte» è attivo il tempo della sessione, chiedilo nella stessa domanda («Salvo tutto? E quanto ci hai lavorato?»).
 3. **Diario della settimana** (`attivita/AAAA-Www.md` del cliente):
    - se il file della settimana corrente non c'è, crealo con la forma di quelli che ci sono (frontmatter `tipo: diario` e `aggiornato`, titolo `# [Cliente] - settimana NN del AAAA`) e ricopia in cima lo `## Stato corrente` dell'ultimo file, prossimi passi compresi; il file vecchio non si tocca più. Mentre ricopi, controlla che lo Stato corrente non contraddica `MEMORY.md` (numeri, decisioni marcate «SUPERATA»): se lo contraddice, non ricopiare l'errore in silenzio, mostralo alla persona e chiedi come scriverlo;
    - aggiungi sotto lo Stato corrente la voce di oggi, `## AAAA-MM-GG`, in cima ai giorni: cosa è stato fatto, in poche righe (e il tempo della sessione, se in «Le tue scelte» è attivo);
@@ -21,8 +21,29 @@ Fa per esteso quello che il `CLAUDE.md` del vault chiama «Salvare il lavoro».
 5. **Cosa hai imparato sulla persona**, se in «Le tue scelte» è attivo. Ripercorri la conversazione e cerca le correzioni sul modo di lavorare («no, scrivilo più corto», «non mandarmi mai la bozza senza il prezzo») e le preferenze che valgono anche per altri clienti. Proponile nell'elenco del punto 2, una riga ciascuna, e con il sì aggiungile a `_claude/PROFILO.md`, nella sezione che c'entra (per esempio «Come lavoro e come decido»), con la data. Una preferenza che vale per un solo cliente va nel `CLAUDE.md` di quel cliente. Se non ce ne sono, non dire niente. È così che il tuo Claude impara: la correzione di oggi non la devi ripetere la settimana prossima.
 6. **Mappa del cliente**: il link a ogni file nuovo, e la riga del diario se è nato un file di settimana.
 7. **`Home.md`**: aggiorna la riga del cliente solo se cambia lo stato (in pausa, chiuso, fase nuova).
-8. **Rileggi e riepiloga** in chat in tre righe: cosa hai salvato e dove.
+8. **Rileggi e chiudi** in chat con una riga: «✅ Salvato: …».
 9. **Bozza per il cliente**, se in «Le tue scelte» è attiva: un messaggio breve di aggiornamento (cosa è stato fatto, cosa serve da lui, il prossimo passo), nel tono del `CLAUDE.md` del cliente. Lo mostri in chat: lo manda la persona, tu non mandi niente.
+
+## La risposta in chat
+
+Corta e un po' colloquiale. Il primo messaggio ha due blocchi, ognuno con la sua emoji all'inizio, sempre le stesse e solo quelle. Un esempio, dal vault di Alberto del corso:
+
+```text
+📝 Ecco cosa salvo per lo Studio Sorriso:
+- nel diario di oggi: i due contatti nuovi segnati nel CRM;
+- nei prossimi passi: spunto «segnare i contatti», e i contatti salgono a 18.
+
+🧠 E una cosa che ho imparato su di te: quando ti propongo cosa scrivere,
+vuoi una riga per file, senza spiegazioni lunghe. La segno nel tuo profilo,
+così vale anche per gli altri clienti.
+
+Salvo tutto?
+```
+
+- Una riga per ogni cosa che cambia davvero, al massimo quattro; quello che non cambia non si nomina. I posti si dicono a parole: il diario, i prossimi passi, le decisioni, la mappa, il profilo.
+- Il 🧠 c'è solo se hai imparato qualcosa sulla persona.
+- Dopo il sì, una riga sola: «✅ Salvato: diario, prossimi passi e profilo.»
+- Niente nomi di file e cartelle, niente «Stato corrente» o «MEMORY».
 
 ## Regole
 
