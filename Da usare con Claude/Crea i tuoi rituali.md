@@ -107,7 +107,8 @@ Puoi scegliere:
 
 1. Altri strumenti collegati, oltre al calendario: la posta, Drive, il foglio dei contatti,
    un gestionale («2 email nuove da Giulia di Crescenda»)
-2. Le priorità della settimana, già attive: se mancano te le chiede, e ti dice cosa le spinge
+2. Le priorità della settimana, già attive: se mancano te le chiede (non di venerdì: le fissa
+   la chiusura della settimana), e ti dice cosa le spinge
    («la scheda del Modulo 3 spinge la priorità "Crescenda riparte"»)
 3. Una domanda personale per iniziare, una fra: per cosa sei grato; qual è la cosa che,
    se la chiudi, rende la giornata un successo; cosa fai oggi che ti avvicina a chi vuoi
@@ -118,7 +119,7 @@ La 2 è già attiva: se non la vuoi, dillo.
 ```
 
 - [ ] Scrive le tue scelte nella sezione «Le tue scelte», in fondo alla skill, e ti mostra cosa ha cambiato. Poi ti spiega che scriverà in `.claude/skills/buongiorno/` e che **l'app ti chiederà il permesso**, perché `.claude/` è una cartella speciale: va consentito. Con il tuo sì la installa e aggiunge la sua riga nella tabella delle procedure del `CLAUDE.md`.
-- [ ] Apri una **conversazione nuova** nel vault e scrivi `/buongiorno`. Rispondi alle domande (le priorità della settimana, se mancano; il focus che ti propone) e dai il sì alla nota di oggi. Poi torna qui e scrivi «provata».
+- [ ] Apri una **conversazione nuova** nel vault e scrivi `/buongiorno`. Conferma il focus che ti propone, rispondi alle altre domande se ne fa (per esempio le priorità della settimana, se mancano) e dai il sì alla nota di oggi. Poi torna qui e scrivi «provata».
 
 **Output atteso**: la skill in `.claude/skills/buongiorno/SKILL.md` e la nota `Daily/AAAA-MM-GG.md` con il focus e il piano per cliente.
 **Verifica**: in fondo alla skill, «Le tue scelte» riporta quello che hai scelto. Scrivi `/` nella chat: nel menu c'è `/buongiorno` (se non c'è, scrivi `/reload-skills`). Apri la cartella `Daily/` in Obsidian: c'è la nota di oggi.
